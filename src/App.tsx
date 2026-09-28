@@ -1,10 +1,5 @@
 import { Link, Navigate, NavLink, Route, Routes } from "react-router-dom";
-import { fetchDocks } from "./services/dockService";
-
-function DocksPage() {
-  fetchDocks().then(console.log);
-  return <h1>Quais d'amarrage</h1>;
-}
+import DocksPage from "./pages/DocksPage";
 
 function DockDetailPage() {
   return <h1>Fiche du quai</h1>;
